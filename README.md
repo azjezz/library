@@ -5,7 +5,7 @@
 ## Getting Started
 
 ```consolle
-$ composer create-project awesome-library
+$ composer create-project azjezz/hack-library example
 ```
 
 ## Development
