@@ -8,3 +8,4 @@ install:
 
 script:
  - docker run --rm -w /var/source -v $(pwd):/var/source hhvm/hhvm:$HHVM_VERSION ./.travis.sh
+ 
