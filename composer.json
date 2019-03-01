@@ -1,0 +1,34 @@
+{
+    "name": "azjezz/hack-library",
+    "description": "Hack Library Skeleton",
+    "type": "library",
+    "require": {
+        "hhvm": "^4.0",
+        "hhvm/hhvm-autoload": "^2.0"
+    },
+    "require-dev": {
+        "hhvm/hhast": "^4.0",
+        "hhvm/hacktest": "^1.4",
+        "facebook/fbexpect": "^2.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "azjezz",
+            "email": "azjezz@protonmail.com"
+        }
+    ],
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "lint": "hhast-lint -v src/Sweet/",
+        "type-check": "hh_client src/Sweet/",
+        "test": "hacktest tests/",
+        "check": [
+            "@type-check",
+            "@lint",
+            "@test"
+        ]
+    }
+}
