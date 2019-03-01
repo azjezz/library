@@ -22,8 +22,8 @@
         "sort-packages": true
     },
     "scripts": {
-        "lint": "hhast-lint -v src/Sweet/",
-        "type-check": "hh_client src/Sweet/",
+        "lint": "hhast-lint -v src/",
+        "type-check": "hh_client src/",
         "test": "hacktest tests/",
         "check": [
             "@type-check",
